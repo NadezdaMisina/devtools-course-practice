@@ -5,44 +5,44 @@
 #include "include/complex_number.h"
 
 TEST(Mishina_Nadezhda_ComplexNumberTest, addition_with_zero) {
-    //Arrange
+    // Arrange
     ComplexNumber a(1.7, 1.3);
     ComplexNumber b(0, 0);
-    //Act
+    // Act
     ComplexNumber res = a + b;
-    //Assert
+    // Assert
     EXPECT_EQ(a.getRe(), res.getRe());
     EXPECT_EQ(a.getIm(), res.getIm());
 }
 TEST(Mishina_Nadezhda_ComplexNumberTest, subtracting_zero) {
-    //Arrange
+    // Arrange
     ComplexNumber a(1.7, 1.3);
     ComplexNumber b(0, 0);
-    //Act
+    // Act
     ComplexNumber res = a - b;
-    //Assert
+    // Assert
     EXPECT_EQ(a.getRe(), res.getRe());
     EXPECT_EQ(a.getIm(), res.getIm());
 }
 TEST(Mishina_Nadezhda_ComplexNumberTest, commutativity_of_addition) {
-    //Arrange
+    // Arrange
     ComplexNumber a(1.7, 1.3);
     ComplexNumber b(2.5, 4.8);
-    //Act
+    // Act
     ComplexNumber res1 = a + b;
     ComplexNumber res2 = b + a;
-    //Assert
+    // Assert
     EXPECT_EQ(res1.getRe(), res2.getRe());
     EXPECT_EQ(res1.getIm(), res2.getIm());
 }
 TEST(Mishina_Nadezhda_ComplexNumberTest, commutativity_of_multiplication) {
-    //Arrange
+    // Arrange
     ComplexNumber a(1.7, 1.3);
     ComplexNumber b(2.5, 4.8);
-    //Act
+    // Act
     ComplexNumber res1 = a * b;
     ComplexNumber res2 = b * a;
-    //Assert
+    // Assert
     EXPECT_EQ(res1.getRe(), res2.getRe());
     EXPECT_EQ(res1.getIm(), res2.getIm());
 }
